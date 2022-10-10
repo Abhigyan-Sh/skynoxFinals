@@ -4,18 +4,18 @@ import { HiBadgeCheck } from 'react-icons/hi';
 
 const Component1 = () => {
   const styles = {
-    profileCov: 'flex flex-col bg-white rounded-3xl',
-    upperHalf: 'bg-rose-30 p-6 px-7 text-xl',
+    profileCov: 'flex flex-col bg-white rounded-3xl cstm_2:m-5',
+    upperHalf: 'p-6 px-7 text-xl',
     boldTxt: 'font-bold text-cstm_txt1 text-xl',
     normyTxt: 'text-cstm_txt1 text-xl',
-    lowerHalf: 'flex p-6 px-7 pt-0 gap-4',
-    profilePicCov: 'relative bg-rose-30',
+    lowerHalf: 'flex p-6 px-7 pt-0 gap-4 cstm_1:flex-col',
+    profilePicCov: 'relative cstm_1:w-fit',
     avatar: 'rounded-full w-20 cursor-pointer',
     badgeCover: 'absolute bottom-0 right-0',
     badge: 'text-3xl text-blue-700',
-    endDiv: 'flex gap-12',
-    paras: 'flex flex-col bg-rose-30 justify-center items-start gap-2 cursor-pointer',
-    status: 'bg-rose-30 flex flex-col justify-start cursor-pointer',
+    endDiv: 'flex gap-12 cstm_2:flex-col',
+    paras: 'flex flex-col justify-center items-start gap-2 cursor-pointer',
+    status: 'flex flex-col justify-start cursor-pointer',
     statusTxt: 'bg-green-200 text-teal-600 font-bold px-5 py-2 rounded-full',
   }
   return (

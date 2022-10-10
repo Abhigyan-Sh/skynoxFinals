@@ -12,6 +12,12 @@ module.exports = {
         'cstm_bg2': '#f9fafc',
       },
     },
+    screens: {
+      'cstm_3': {'max': '1080px'},
+      'cstm_4': {'max': '790px'},
+      'cstm_1': {'max': '580px'},
+      'cstm_2': {'max': '440px'},
+    }
   },
   plugins: [],
 }

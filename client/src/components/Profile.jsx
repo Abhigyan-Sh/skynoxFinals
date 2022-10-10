@@ -3,10 +3,10 @@ import { IoMdSettings } from 'react-icons/io'
 
 const Profile = (props) => {
     const styles = {
-        profile: 'flex justify-between items-center',
+        profile: 'flex justify-between items-center cstm_2:flex-col',
         profilePicCover: 'mr-4',
         avatar: 'rounded-full w-14 cursor-pointer',
-        endDiv: 'flex justify-between w-full',
+        endDiv: 'flex justify-between w-full cstm_1:flex-col',
         paras: 'flex flex-col gap-0 cursor-pointer',
         userTxt: 'font-bold text-cstm_txt1 text-lg',
         normyTxt: 'text-gray-500 text-base font-semibold',
@@ -30,7 +30,7 @@ const Profile = (props) => {
         <div className={styles.options}>
           <IoMdSettings className={styles.icons}/>
           <select className='border-0 border-white cursor-pointer'>
-            <option selected>Owner</option>
+            <option defaultValue=''>Owner</option>
             <option value="connect">Connect</option>
             <option value="follow">Follow</option>
             <option value="message">Message</option>

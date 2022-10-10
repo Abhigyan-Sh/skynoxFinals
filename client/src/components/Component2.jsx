@@ -8,11 +8,11 @@ import Profile from '../components/Profile.jsx'
 
 const Component2 = () => {
   const styles = {
-    compo: 'flex flex-col bg-white rounded-3xl p-6 px-7 w-5/12',
+    compo: 'flex flex-col bg-white rounded-3xl p-6 px-7 w-5/12 cstm_3:w-7/12 cstm_4:w-10/12 cstm_2:mt-24',
     compoHead: '',
     header: 'relative',
     input: 'p-4 w-full text-sm text-gray-900 bg-cstm_bg2 border border-zinc-400 rounded-lg focus:ring-zinc-400 focus:border-zinc-400',
-    close: 'absolute top-0 right-0 text-gray-400 text-3xl cursor-pointer',
+    close: 'absolute top-0 right-0 text-gray-400 text-3xl cursor-pointer cstm_2:hidden',
     compoBody: 'flex flex-col justify-between items-start',
     avatar: 'rounded-full w-14',
     boldTxt: 'font-bold text-cstm_txt1 text-xl',
@@ -38,7 +38,7 @@ const Component2 = () => {
             <span className='text-xl text-zinc-400 font-semibold'>@</span>
           </div>
           <input className='block p-4 pl-10 w-full text-sm text-gray-900 bg-cstm_bg2 rounded-lg focus:ring-blue-500 focus:border-blue-500'/>
-          <button className='text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2'>
+          <button className='text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 cstm_2:text-xs cstm_2:right-0'>
             Send Invite</button>
         </div>
       </div>
@@ -57,14 +57,14 @@ const Component2 = () => {
       {/* 3/3 */}
         <div>
           <label className={styles.dullTxt}>Link to share</label>
-          <div className='flex gap-2'>
+          <div className='flex gap-2 cstm_2:flex-col'>
             <input
-              type= 'text'
-              placeholder= 'https://www.diapainhouse.com/QOqywGortwk?node=707'
+              type= 'text' 
+              placeholder= 'https://www.diapainhouse.com/QOqywGortwk?node=707' 
               className={styles.input}/>
             <button className='text-blue-800 border border-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-lg px-2.5 py-2 text-center font-bold text-sm'>
               Copy</button>
-            <button className='text-black border border-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-lg px-2.5 py-2 text-center font-bold text-2xl'>
+            <button className='text-black border border-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-lg px-2.5 py-2 text-center font-bold text-2xl flex justify-center items-center'>
               <CgOptions/>
             </button>
           </div>
